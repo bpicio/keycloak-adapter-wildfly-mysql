@@ -1,4 +1,4 @@
-FROM jboss/keycloak-adapter-wildfly:3.4.0.Final
+FROM jboss/keycloak-adapter-wildfly:3.4.1.Final
 
 ENV MYSQL_CONNECTOR_VERSION 5.1.45
 
