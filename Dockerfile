@@ -13,6 +13,7 @@ RUN wget "http://central.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_CON
 COPY wildfly ${JBOSS_HOME}
 RUN sed -i -e s/MYSQL-CONNECTOR-VERSION/${MYSQL_CONNECTOR_VERSION}/g ${JBOSS_HOME}/modules/com/mysql/jdbc/main/module.xml
 RUN chown jboss:jboss -R /opt/jboss/wildfly
+
 USER jboss
 
 # Custmoize datasources
